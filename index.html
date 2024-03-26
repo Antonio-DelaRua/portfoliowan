@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>wan portofolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">De Aranzadi</div>
+      <div class="logo">
+        <img src="assets/ARANZADI_Logo.png" style="width: 150px; height: 100px;" alt="Logo De Aranzadi">
+      </div>
+      <h3>  </h3>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -30,20 +33,20 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expertise</a></li>
+          <li><a href="#resumen" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/Diseno_sin_titulo_1.png" alt="John Doe profile picture" />
+        <img src="./assets/Snapshot_2.PNG" alt="John Doe profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section__text__p1">Hello,<span style="color:red;"> I'm</span> </p>
         <h1 class="title">Juan De Aranzadi </h1>
-        <p class="section__text__p2">Musician & Producer</p>
+        <p class="section__text__p2">Musician <span style="color:red">&</span> Producer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -57,13 +60,20 @@
         </div>
         <div id="socials-container">
           <img
-            src="./assets/whatsapp-logo-112413FAA7-seeklogo.com.png"
+            src="./assets/wasaaa.jpeg"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://linkedin.com/'"
           />
           <img
-            src="./assets/email.jpg"
+            src="./assets/yt2.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          
+          <img
+            src="./assets/gmail_14189.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/'"
@@ -72,7 +82,7 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Education</p>
+      <p class="section__text__p1">Personal</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -83,37 +93,8 @@
           />
         </div>
         <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Carlos Pino School</h3>
-              <p>2003-2009<br />Harmony</p>
-              <p br>Guitar</p>
-              <p br>Musical language</p>
-              <p br>Composition</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Creativa Music School Madrid</h3>
-              <p>2009-2015<br />Music Production</p>
-              <p br>Ear training</p>
-              <p br>Film Scoring</p>
-              <p br>Composition</p>
-              <p br>Guitar and Piano</p>
-              <p br>Mixing & Mastering</p>
-              <p br>Audio editing</p>
-            </div>
-          </div>
           <div class="text-container">
-            <p>
+            <p style="font-size: large; ">
               Dedicated and detail-oriented Musician, Performer and
               Music Producer with 20 years of experience.
               I have committed myself to develop my interest in
@@ -128,7 +109,11 @@
               and I am very keen to strive towards a career in this
               very area.
             </p>
+            <button style="margin-top: 40px;"> learn more</button>
+            
           </div>
+         
+          
         </div>
       </div>
       <img
@@ -144,88 +129,88 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">-----------------------------------</h2>
+            <h2 class="experience-sub-title"></h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/DaVinci_Resolve_17_logo.svg.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>DaVinci Resolve</h3>
-                  <p>Experienced</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/Wondershare_filmora_logo.svg.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>Wondershare Filmora</h3>
-                  <p>Experienced</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/Logicpro-icon.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>Logic Pro X</h3>
-                  <p>Intermediate</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/ProTools-Icon.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>Pro Tool HD</h3>
-                  <p>Basic</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/prueb1.webp"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Cubase</h3>
-                  <p>Basic</p>
+                  <h3>Cubase music </h3>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/ae.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>Adobe after Effects</h3>
-                  <p>Intermediate</p>
+                  
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">-----------------------------------</h2>
-            <div class="article-container">
+            <h2 class="experience-sub-title"></h2>
+            <div class="article-container" >
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/Antares-Autotune-Pro-Crack.jpg"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>Antares Auto-tune</h3>
-                  <p>Basic</p>
+                 
                 </div>
               </article>
               <article>
@@ -236,53 +221,54 @@
                 />
                 <div>
                   <h3>Valhalla Assets</h3>
-                  <p>Intermediate</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/ozone.jpeg"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>Izotope Ozone</h3>
-                  <p>Intermediate</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/obs.jpeg"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>OBS studio</h3>
-                  <p>Intermediate</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/sl.jpeg"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
                   <h3>stream labs</h3>
-                  <p>Intermediate</p>
+                  
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/English-250x250.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>English</h3>
-                  <p>Intermediate</p>
+                  <h3>English language</h3>
+                  
                 </div>
               </article>
+              
             </div>
           </div>
         </div>
@@ -294,92 +280,93 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+    <section class="resumen" id="resumen" >
+      <div class="contenido-seccion">
+        <p class="section__text__p1">Education</p>
+        <h1 class="title" style="margin-bottom: 70px;">Mi preparación y experiencia</h1>
+        
+          
+          <div class="info">
+              <div class="col">
+                  <span class="titulo">Educación</span>
+                  <table>
+                      <tr>
+                          <td class="datos">
+                              <h3>2006 - 2010</h3>
+                          </td>
+                          <td rowspan="2" class="descripcion">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at soluta quos explicabo dolor recusandae, dolorum.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <h4>Lic. en computación</h4>
+                              <p>Universidad de San Juan</p>
+                              <span class="promedio">8.9 PG</span>
+                          </td>
+                      </tr>
+                  </table>
+                  <table>
+                      <tr>
+                          <td class="datos">
+                              <h3>2010 - 2015</h3>
+                          </td>
+                          <td rowspan="2" class="descripcion">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at soluta quos explicabo dolor recusandae, dolorum.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <h4>Programador FS</h4>
+                              <p>Udemy Cursos</p>
+                              <span class="promedio">8.9 PG</span>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="col">
+                  <span class="titulo">Experiencia Laboral</span>
+                  <table>
+                      <tr>
+                          <td class="datos">
+                              <h3>3 Años</h3>
+                          </td>
+                          <td rowspan="2" class="descripcion">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at soluta quos explicabo dolor recusandae, dolorum.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <h4>Mercado Libre</h4>
+                              <p>Programador Junior</p>
+                             
+                          </td>
+                      </tr>
+                  </table>
+                  <table>
+                      <tr>
+                          <td class="datos">
+                              <h3>2 Años</h3>
+                          </td>
+                          <td rowspan="2" class="descripcion">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at soluta quos explicabo dolor recusandae, dolorum.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <h4>Software Inc.</h4>
+                              <p>Diseñadr Principal</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+          
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+      
+  </section>
+     
+    
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -413,7 +400,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 RuXx. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
