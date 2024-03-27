@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: rgb(128, 128, 128);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -215,51 +215,116 @@ section {
 
 /* BUTTONS */
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
+button{
+  width:200px;
+  height:70px;
+  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  border-style: none;
+  color:#fff;
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-family: 'Lato';
   font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
+  outline: none;
   cursor: pointer;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+  transition: all .5s;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+  position: absolute;
+  display: block;
+}
+button span:nth-child(1){
+  height: 3px;
+  width:200px;
+  top:0px;
+  left:-200px;
+  background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+@keyframes span1{
+  0%{
+      left:-200px
+  }
+  100%{
+      left:200px;
+  }
+}
+button span:nth-child(2){
+  height: 70px;
+  width: 3px;
+  top:-70px;
+  right:0px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes span2{
+  0%{
+      top:-70px;
+  }
+  100%{
+      top:70px;
+  }
+}
+button span:nth-child(3){
+  height:3px;
+  width:200px;
+  right:-200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes span3{
+  0%{
+      right:-200px;
+  }
+  100%{
+      right: 200px;
+  }
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
+button span:nth-child(4){
+  height:70px;
+  width:3px;
+  bottom:-70px;
+  left:0px;
+  background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes span4{
+  0%{
+      bottom: -70px;
+  }
+  100%{
+      bottom:70px;
+  }
 }
 
-.btn-color-2 {
-  background: none;
+button:hover{
+  transition: all .5s;
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+  animation-play-state: paused;
 }
 
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
-}
 
 /* ABOUT SECTION */
 
@@ -297,7 +362,7 @@ section {
   padding: 1.5rem;
   flex: 1;
   background: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
@@ -331,6 +396,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .article-container {
@@ -354,20 +420,27 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
+
+#resumen {
+  margin-bottom: 100px; /* ajusta este valor según sea necesario */
+}
 .resumen{
   background-color: #FFFFFF;
   padding: 140px 0 100px 0;
   text-align: center;
+  
 }
 .resumen .contenido-seccion{
   background-color: #FFFFFF;
   max-width: 1000px;
   margin: auto;
   padding: 0 10px;
+  
 }
 .resumen .contenido-seccion h3{
   text-transform: uppercase;
   font-size: 30px;
+  color:#c90b0b;
 }
 .resumen .contenido-seccion .info{
   text-align: left;
@@ -413,6 +486,16 @@ article .icon {
 .resumen .contenido-seccion .info .col table .descripcion{
   border-left: 1px solid #bab9b9;
   padding-left: 20px;
+}
+
+
+.info{
+height: 500px; /* Altura fija del contenedor, ajusta según sea necesario */
+overflow-y: scroll; 
+}
+.col {
+  flex: 1;
+  margin-right: 20px; /* Espacio entre las columnas, ajusta según sea necesario */
 }
 
 /* SECCION RESPONSIVE */
@@ -493,13 +576,15 @@ article .icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
 
-footer {
-  height: 26vh;
-  margin: 0 1rem;
+
+ul {
+  list-style-type: none; /* Elimina los puntos */
+  margin: 0;
+  padding: 0;
 }
 
-footer p {
-  text-align: center;
+li {
+  margin-bottom: 5px; /* Añade un poco de espacio entre cada elemento */
 }
+
