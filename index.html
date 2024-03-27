@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wan portofolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Poiret+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -45,7 +47,7 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello,<span style="color:red;"> I'm</span> </p>
-        <h1 class="title">Juan De Aranzadi </h1>
+        <h1 class="title1">Juan De Aranzadi </h1>
         <p class="section__text__p2">Musician <span style="color:red">&</span> Producer</p>
         <div class="btn-container">
           <button
@@ -81,7 +83,7 @@
     </section>
     <section id="about">
       <p class="section__text__p1">Personal</p>
-      <h1 class="title">About Me</h1>
+      <h1 class="title1">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -133,7 +135,7 @@
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Expertise</h1>
+      <h1 class="title1">Expertise</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -291,7 +293,7 @@
     <section class="resumen" id="resumen" >
       <div class="contenido-seccion">
         <p class="section__text__p1">Education</p>
-        <h1 class="title" style="margin-bottom: 70px;">Mi preparación y experiencia</h1>
+        <h1 class="title1" style="margin-bottom: 70px;">Mi preparación y experiencia</h1>
         
           
           <div class="info">
@@ -519,11 +521,82 @@
       </div>
       
   </section>
-     
+  <section id="repro">
+    <p class="section__text__p1">Musica Personal</p>
+      <h1 class="title1" style="margin-bottom: 3rem;">Mis canciones</h1>
+  
+  <div class="audio-player" id="skin">
+    
+    
+    <div class="user_avatar">
+      
+      <br />
+      <a href="https://www.configuroweb.com/46-aplicaciones-gratuitas-en-php-python-y-javascript/#Aplicaciones-gratuitas-en-PHP,-Python-y-Javascript" title="Para más desarrollos ConfiguroWeb"><img src="assets/ARANZADI_Logo.jpg"></a>
+      <nav class="set">
+        <a class="dropdown-toggle" href="#" title="Menu"><i class="fa fa-cogs"></i></a>
+        <ul class="dropdown">
+          <li><a href="#" id="darkButton">Tema Oscuro</a></li>
+          <li><a href="#" id="whiteButton">Por Defecto</a></li>
+          <li><a href="#" id="blueButton">Morado</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="holder">
+      <div class="cover">
+        
+        <img src="./assets/concert.jpg">
+      </div>
+      <div class="audio-wrapper" id="player-container" href="javascript:;">
+        <audio id="player" preload="metadata" onloadedmetadata="mDur()" ontimeupdate="initProgressBar()">
+          <source src="" type="audio/mp3">
+        </audio>
+      </div>
+      <div class="player-controls scrubber">
+        <div>
+          <div>
+            <p class="title"></p>
+          </div>
+          <div class="range">
+            <input id="dur" type="range" class="range" name="rng" min="0" max="1" step="0.00000001" value="0" onchange="mSet()" style="width: 100%">
+          </div>
+          <br>
+          <span class="time start-time"></span>
+          <span class="time end-time"></span>
+          <br>
+          <div class="ctrl">
+            <div>
+              <a href="#prev" class="ctrl_btn " id="prev"><i class="fa fa-arrow-left" ></i></a>
+              <span id="play-btn" class="fa fa-play "></span>
+              <a href="#next" class="ctrl_btn " id="next"><i class="fa fa-arrow-right" ></i></a>
+            </div>
+            <div class="volumeControl">
+              <div class="wrapper">
+                <i class="fa fa-volume-up"></i>
+                <span class="outer">
+                  <span class="inner"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  
+    
+  </div>
+  
+  
+  <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="src/script.js"></script>
+
+  
+  </section>
     
     <section id="contact">
       <p class="section__text__p1">contact</p>
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title1">Contact Me</h1>
     </section>
     <footer>
       <nav>
@@ -539,5 +612,6 @@
       <p>Copyright &#169; 2024 RuXx. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    
   </body>
 </html>
