@@ -1,9 +1,4 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+
 
 let playlist = [ {
   'title': 'Here it Comes - TrackTribe',
@@ -83,6 +78,7 @@ function initPlayers( num ) {
       }
 
       function togglePlay( ) {
+       
         if ( player.paused === false ) {
           player.pause( );
           isPlaying = false;
@@ -103,6 +99,7 @@ function initPlayers( num ) {
     }( ) );
   }
 }
+
 $( "#next" ).data( 'dir', 1 );
 $( "#prev" ).data( 'dir', -1 );
 $( '#next, #prev' ).on( 'click', function( ) {
@@ -117,6 +114,7 @@ $( '#next, #prev' ).on( 'click', function( ) {
 $( ".audio-player" )
   .toArray( )
   .forEach( function( player ) {
+    
     let audio = $( player ).find( "audio" )[ 0 ];
     let volumeControl = $( player ).find( ".volumeControl .wrapper" );
     volumeControl.find( ".outer" ).on( "click", function( e ) {
@@ -137,7 +135,7 @@ $( function( ) {
     $( this ).next( '.dropdown' ).slideToggle( "fast" );
   } );
   $( document ).click( function( e ) {
-    event.preventDefault();
+    
     var target = e.target;
     if ( !$( target ).is( '.dropdown-toggle' ) && !$( target ).parents( ).is( '.dropdown-toggle' ) ) {
       $( '.dropdown' ).hide( );
