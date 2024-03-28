@@ -133,9 +133,11 @@ $( ".audio-player" )
 $( function( ) {
   // Dropdown toggle
   $( '.dropdown-toggle' ).click( function( ) {
+    event.preventDefault();
     $( this ).next( '.dropdown' ).slideToggle( "fast" );
   } );
   $( document ).click( function( e ) {
+    event.preventDefault();
     var target = e.target;
     if ( !$( target ).is( '.dropdown-toggle' ) && !$( target ).parents( ).is( '.dropdown-toggle' ) ) {
       $( '.dropdown' ).hide( );
