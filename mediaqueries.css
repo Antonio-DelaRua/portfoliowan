@@ -96,8 +96,15 @@
   }
   .title1 {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
   .text-container {
     text-align: justify;
   }
+  .btn-container {
+  text-align: center;
+
+  }
+
+  
 }
