@@ -460,7 +460,7 @@ article .icon {
 .resumen .contenido-seccion h3{
   text-transform: uppercase;
   font-size: 30px;
-  color:#c90b0b;
+  color:#FF0000;
 }
 .resumen .contenido-seccion .info{
   text-align: left;
@@ -475,7 +475,7 @@ article .icon {
   display: inline-block;
   font-style: oblique;
   font-weight: bold;
-  border: 4px solid #c90b0b;
+  border: 4px solid #FF0000;
   border-radius: 7px;
   padding: 10px;
 
@@ -500,7 +500,7 @@ article .icon {
 }
 .resumen .contenido-seccion .info .col table .promedio{
   display: block;
-  color: #c90b0b;
+  color: #FF0000;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -1101,4 +1101,39 @@ ul.dropdown li a {
   .audio-player .user_avatar img {
     display: none;
 }
+}
+
+#form {
+  width: 100%;
+  max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Espacio entre elementos */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px; /* Altura del área de texto */
+}
+
+#submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF040F; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submit:hover {
+  background-color: #aa3045; /* Color de fondo del botón al pasar el ratón */
 }
